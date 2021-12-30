@@ -145,6 +145,7 @@ void next_move() {
 	
 	board[column_int][row_int] = turn;
 	if (check_winner()) {
+		draw();
 		printf("'%c' has won this game of tic-tac-toe! congratulations!!!!\n", turn == 1 ? 'X' : 'O');
 		puts("this prompt will automatically close in 5 seconds!");
 
